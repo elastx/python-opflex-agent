@@ -16,7 +16,7 @@ import setuptools
 
 setuptools.setup(
     name="neutron-opflex-agent",
-    version="7.0.0",
+    version="8.0.0",
     packages=setuptools.find_packages(exclude=["*.tests", "*.tests.*",
                                                "tests.*", "tests"]),
     author="Cisco Systems, Inc.",
@@ -46,9 +46,6 @@ setuptools.setup(
             'ovs = opflexagent.utils.bridge_managers.ovs_manager:OvsManager',
             'fake = opflexagent.utils.bridge_managers.ovs_manager:FakeManager',
             'vpp = opflexagent.utils.bridge_managers.vpp_manager:VppManager'
-        ],
-        'os_vif': [
-            'vpp = opflexagent.vif_plug_vpp.vpp:VppPlugin',
         ]
     },
     data_files=[('etc/neutron/opflex-agent',

@@ -10,13 +10,13 @@
 #    License for the specific language governing permissions and limitations
 #    under the License.
 
+from aci_vpplib.VPPApi import VPPApi
 from neutron.agent.linux import ip_lib
 from neutron.plugins.ml2.drivers.openvswitch.agent.common import constants
 from neutron_lib import constants as lib_constants
 from opflexagent import constants as ofcst
 from opflexagent.utils.bridge_managers import bridge_manager_base
 from opflexagent.utils.bridge_managers import trunk_skeleton
-from opflexagent.vpplib.VPPApi import VPPApi
 import os
 from oslo_log import log as logging
 

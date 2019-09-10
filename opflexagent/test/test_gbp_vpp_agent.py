@@ -16,8 +16,8 @@ import sys
 import mock
 sys.modules["apicapi"] = mock.Mock()
 sys.modules["pyinotify"] = mock.Mock()
-sys.modules['opflexagent.vpplib'] = mock.MagicMock()
-sys.modules['opflexagent.vpplib.VPPApi'] = mock.MagicMock()
+sys.modules['aci_vpplib'] = mock.MagicMock()
+sys.modules['aci_vpplib.VPPApi'] = mock.MagicMock()
 
 import contextlib
 from neutron.api.rpc.callbacks import events
